@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Primal_era_stonetest
+  m_Name: StoneWall100x100
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 214a5b72258c2504185190d3afe63b31, type: 3}
+  m_Sprite: {fileID: 21300000, guid: efb53a37587c88741b1431096bfd3d77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
