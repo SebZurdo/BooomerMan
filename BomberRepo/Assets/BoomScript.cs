@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
 public class BoomScript : MonoBehaviour
@@ -14,7 +13,7 @@ public class BoomScript : MonoBehaviour
 
         if(TwoSeconds <= 0f)
         {
-            Debug.Log("Bam!");
+            Debug.Log("Bam");
             FindObjectOfType<TileDestroyer>().Explode(transform.position);
             Destroy(gameObject);
         }

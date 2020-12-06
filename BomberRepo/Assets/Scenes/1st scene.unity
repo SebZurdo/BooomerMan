@@ -249,6 +249,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &927883794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356163, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856265888044356164, guid: fa9438510e60ed54a879543fae7957d6,
+        type: 3}
+      propertyPath: m_Name
+      value: FirePowerUpBlue
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa9438510e60ed54a879543fae7957d6, type: 3}
 --- !u!1 &928968324
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +368,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6117e5ce6c39f58408627293dfc1e7c1, type: 2}
+  - {fileID: 2100000, guid: 3baab70378da5f84b9168895e6dad832, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7413,6 +7482,7 @@ GameObject:
   - component: {fileID: 1128148060}
   - component: {fileID: 1128148059}
   - component: {fileID: 1128148058}
+  - component: {fileID: 1128148061}
   m_Layer: 0
   m_Name: OnlyBlocks
   m_TagString: Untagged
@@ -11192,6 +11262,18 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &1128148061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128148054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6beaad5d59406346b0a773b1613b212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1741248221
 GameObject:
   m_ObjectHideFlags: 0
@@ -11252,8 +11334,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Grid: {fileID: 1128148057}
   n: 0
+  random: 0
   Wall: {fileID: 11400000, guid: 0c6389c8041bf2d4bab1cff92bd1784d, type: 2}
   Border: {fileID: 11400000, guid: a44c5899a7f75244688a02cfedac79db, type: 2}
   Breakable: {fileID: 11400000, guid: 0d520ab5553e4ca4f9a83e934aeeaa81, type: 2}
   BoomAnimation: {fileID: 5788108892981468849, guid: c69c511b201710545b7f53fabd19990e,
+    type: 3}
+  FirePowerUp: {fileID: 5856265888044356164, guid: fa9438510e60ed54a879543fae7957d6,
+    type: 3}
+  SkatePowerUp: {fileID: 801688677952424303, guid: c3a1eb04549e3f64ea5aec40fc9a5b62,
     type: 3}
