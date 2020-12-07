@@ -3,7 +3,15 @@ guid: b68db5356131d8e40b4a47fcbd749bc5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Player1: {instanceID: 0}
+  - Grid: {instanceID: 0}
+  - Wall: {fileID: 11400000, guid: 0c6389c8041bf2d4bab1cff92bd1784d, type: 2}
+  - Border: {fileID: 11400000, guid: a44c5899a7f75244688a02cfedac79db, type: 2}
+  - Breakable: {instanceID: 0}
+  - BoomAnimation: {instanceID: 0}
+  - FirePowerUp: {instanceID: 0}
+  - SkatePowerUp: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

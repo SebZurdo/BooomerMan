@@ -16,13 +16,8 @@ public class PowerUpCollisionSkate : MonoBehaviour
 
      private void Pickup2(Collider2D player)
     {
-        Player_1 speed = player.GetComponent<Player_1>();
+        Player1 speed = player.GetComponent<Player1>();
         speed.movSpeed += 0.25f;
-        Destroy(gameObject);
-    }
-
-    private void DestroyItself()
-    {
         Destroy(gameObject);
     }
 

@@ -27,40 +27,46 @@ public class TileDestroyer : MonoBehaviour
     public void Explode(Vector2 PosInWorld)
     {
         Vector3Int ExplosionCenter = Grid.WorldToCell(PosInWorld);
-        Player_1 BombPower = Player1.GetComponent<Player_1>();
+        Player1 BombPower = Player1.GetComponent<Player1>();
         n = BombPower.BombPower;
-        RemoveCell(ExplosionCenter);
-        for (int i = 1; i < n; i++)
+        if (RemoveCell(ExplosionCenter))
         {
-            if (RemoveCell(ExplosionCenter + new Vector3Int(i, 0, 0))){
-                RemoveCell(ExplosionCenter + new Vector3Int(i+1, 0, 0));
-                continue;
+            for (int i = 1; i < n; i++)
+            {
+                if (RemoveCell(ExplosionCenter + new Vector3Int(i, 0, 0)))
+                {
+                    RemoveCell(ExplosionCenter + new Vector3Int(i + 1, 0, 0));
+                    continue;
+                }
+                break;
             }
-            break;
-        }
-        for (int i = 1; i < n; i++)
-        {
-            if (RemoveCell(ExplosionCenter + new Vector3Int(0, i, 0))){
-                RemoveCell(ExplosionCenter + new Vector3Int(0, i+1, 0));
-                continue;
+            for (int i = 1; i < n; i++)
+            {
+                if (RemoveCell(ExplosionCenter + new Vector3Int(0, i, 0)))
+                {
+                    RemoveCell(ExplosionCenter + new Vector3Int(0, i + 1, 0));
+                    continue;
+                }
+                break;
             }
-            break;
-        }
-        for (int i = 1; i < n; i++)
-        {
-            if (RemoveCell(ExplosionCenter + new Vector3Int(-i, 0, 0))){
-                RemoveCell(ExplosionCenter + new Vector3Int(-(i+1), 0, 0));
-                continue;
+            for (int i = 1; i < n; i++)
+            {
+                if (RemoveCell(ExplosionCenter + new Vector3Int(-i, 0, 0)))
+                {
+                    RemoveCell(ExplosionCenter + new Vector3Int(-(i + 1), 0, 0));
+                    continue;
+                }
+                break;
             }
-            break;
-        }
-        for (int i = 1; i < n; i++)
-        {
-            if (RemoveCell(ExplosionCenter + new Vector3Int(0, -i, 0))){
-                RemoveCell(ExplosionCenter + new Vector3Int(0, -(i+1), 0));
-                continue;
+            for (int i = 1; i < n; i++)
+            {
+                if (RemoveCell(ExplosionCenter + new Vector3Int(0, -i, 0)))
+                {
+                    RemoveCell(ExplosionCenter + new Vector3Int(0, -(i + 1), 0));
+                    continue;
+                }
+                break;
             }
-            break;
         }
     }
 

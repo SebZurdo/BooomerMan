@@ -10,18 +10,16 @@ public class PowerUpCollisionFire : MonoBehaviour
         {
             Pickup(collider);
         }
+        
 
     }
 
     void Pickup(Collider2D player)
     {
-        Player_1 power = player.GetComponent<Player_1>();
+        Player1 power = player.GetComponent<Player1>();
         power.BombPower += 1;
         Destroy(gameObject);
     }
 
-    private void DestroyItself()
-    {
-        Destroy(gameObject);
-    }
+
 }

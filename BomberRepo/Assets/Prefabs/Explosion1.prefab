@@ -111,7 +111,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5788108892981468849}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 280f403a53a35734b9fd7dc259736b67, type: 3}
   m_Name: 
@@ -155,5 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233934a6e6782c84bb0486690dd9640c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirePower: {fileID: 0}
-  SkatePower: {fileID: 0}
+  FirePower: {fileID: 5856265888044356164, guid: fa9438510e60ed54a879543fae7957d6,
+    type: 3}
+  SkatePower: {fileID: 801688677952424303, guid: c3a1eb04549e3f64ea5aec40fc9a5b62,
+    type: 3}

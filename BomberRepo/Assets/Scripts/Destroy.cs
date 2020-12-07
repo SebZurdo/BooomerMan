@@ -5,14 +5,15 @@ using UnityEngine;
 public class Destroy : MonoBehaviour
 {
     public GameObject FirePower;
-
+    public Player1 Player;
     public GameObject SkatePower;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Player"))
         {
-            Debug.Log("Dead dog");
+            Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player1>();
+            Player.Dies();
         }
         else if(collider.CompareTag("PowerUp"))
         {
@@ -26,15 +27,5 @@ public class Destroy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void DestroyOther(GameObject Powerup)
-    {
-        if(Powerup == FirePower)
-        {
-            Destroy(Powerup);
-        }
-        if (Powerup == SkatePower)
-        {
-            Destroy(Powerup);
-        }
-    }
+    
 }
