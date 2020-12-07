@@ -6,6 +6,7 @@ public class Destroy : MonoBehaviour
 {
     public GameObject FirePower;
     public Player1 Player;
+    public Player2 Player_2;
     public GameObject SkatePower;
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -15,6 +16,13 @@ public class Destroy : MonoBehaviour
             Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player1>();
             Player.Dies();
         }
+
+        else if (collider.CompareTag("Player_2"))
+        {
+            Player_2 = GameObject.FindGameObjectWithTag("Player_2").GetComponent<Player2>();
+            Player_2.Dies();
+        }
+
         else if(collider.CompareTag("PowerUp"))
         {
             Debug.Log("Dead object");

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
 
-public class Player1 : MonoBehaviour
+public class Player2 : MonoBehaviour
 {
-    public int Alive;
+   public int Alive;
     public int BombPower;
     public float movSpeed;
     public Vector3 temPos;
@@ -15,6 +15,7 @@ public class Player1 : MonoBehaviour
     public GameObject DieAnimation;
 
     Vector2 movement;
+
     void Start()
     {
         BombPower = 2;
@@ -26,11 +27,11 @@ public class Player1 : MonoBehaviour
     void Update()
     {
         // Reads Horizontal axis 
-        if(Input.GetKey("right"))
+        if(Input.GetKey("d"))
         {
             movement.x = 1;
         }
-        else if(Input.GetKey("left"))
+        else if(Input.GetKey("a"))
         {
             movement.x = -1;
         }
@@ -40,11 +41,11 @@ public class Player1 : MonoBehaviour
         }
 
         // Reads Vertical axis
-        if(Input.GetKey("up"))
+        if(Input.GetKey("w"))
         {
             movement.y = 1;
         }
-        else if(Input.GetKey("down"))
+        else if(Input.GetKey("s"))
         {
             movement.y = -1;
         }
@@ -70,9 +71,10 @@ public class Player1 : MonoBehaviour
         Renderer rend = PlayerCharacter.GetComponent<Renderer>();
         Instantiate(DieAnimation, PlayerCharacter.transform.position, Quaternion.identity);
         rend.enabled = false;
-        Player1 function = PlayerCharacter.GetComponent<Player1>();
+        Player2 function = PlayerCharacter.GetComponent<Player2>();
         function.enabled = false;
         transform.position = new Vector3Int(20, 20, 20);
         Alive = 0;
     }
+    
 }
