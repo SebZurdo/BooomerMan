@@ -31,6 +31,7 @@ public class Player1 : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
         
 
     }
@@ -50,4 +51,6 @@ public class Player1 : MonoBehaviour
         transform.position = new Vector3Int(20, 20, 20);
         Alive = 0;
     }
+    
+    
 }

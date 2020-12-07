@@ -24,7 +24,6 @@ public class BombSpawner : MonoBehaviour
                 PosY = (int)(Mathf.Floor(Player1.transform.position.y));
                 Vector3Int CellPos = new Vector3Int(PosX, PosY, 0);
                 Vector3 CenterPos = tilemap.GetCellCenterWorld(CellPos);
-                Debug.Log(CellPos);
                 Instantiate(bombP, CenterPos, Quaternion.identity);
             }
         }
