@@ -13,7 +13,6 @@ public class BoomScript : MonoBehaviour
 
         if(TwoSeconds <= 0f)
         {
-            Debug.Log("Bam");
             FindObjectOfType<TileDestroyer>().Explode(transform.position);
             Destroy(gameObject);
         }

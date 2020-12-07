@@ -3,6 +3,8 @@ using UnityEngine.Tilemaps;
 
 public class TileDestroyer : MonoBehaviour
 {
+    public GameObject Player1;
+
     public Tilemap Grid;
 
     public int n;
@@ -25,7 +27,8 @@ public class TileDestroyer : MonoBehaviour
     public void Explode(Vector2 PosInWorld)
     {
         Vector3Int ExplosionCenter = Grid.WorldToCell(PosInWorld);
-        n = 5;
+        Player_1 BombPower = Player1.GetComponent<Player_1>();
+        n = BombPower.BombPower;
         RemoveCell(ExplosionCenter);
         for (int i = 1; i < n; i++)
         {
@@ -78,7 +81,7 @@ public class TileDestroyer : MonoBehaviour
         {
             Grid.SetTile(cell, null);
             Vector3 PowerPos = Grid.GetCellCenterWorld(cell);
-            random = UnityEngine.Random.Range(0,5);
+            random = UnityEngine.Random.Range(0,8);
             switch (random)
             {
                 case 0:

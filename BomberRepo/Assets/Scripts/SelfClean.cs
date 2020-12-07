@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SelfClean : MonoBehaviour
 {
-    public float SelfDestroy = 0.2f;
+    public float SelfDestroy = 1f;
 
     // Update is called once per frame
     void Update()

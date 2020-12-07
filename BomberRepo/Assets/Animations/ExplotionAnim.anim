@@ -24,20 +24,16 @@ AnimationClip:
     - time: 0.083333336
       value: {fileID: 21300000, guid: d59ff873020f9224aa36264451eee999, type: 3}
     - time: 0.16666667
-      value: {fileID: 21300000, guid: 2e6b56faf5ea4c24c841ec2f8d1c75fb, type: 3}
-    - time: 0.25
-      value: {fileID: 21300000, guid: ee4b90537ec0b2d41985f56925f440ee, type: 3}
-    - time: 0.33333334
-      value: {fileID: 21300000, guid: 2a39d7271f29c4b4a90b3099859afda2, type: 3}
-    - time: 0.41666666
-      value: {fileID: 21300000, guid: 225408b40be6d644c824458693a462fd, type: 3}
-    - time: 0.5
       value: {fileID: 21300000, guid: 736a44c73a9d6e64782d3c1805af74da, type: 3}
-    - time: 0.5833333
+    - time: 0.25
+      value: {fileID: 21300000, guid: 225408b40be6d644c824458693a462fd, type: 3}
+    - time: 0.33333334
+      value: {fileID: 21300000, guid: 736a44c73a9d6e64782d3c1805af74da, type: 3}
+    - time: 0.41666666
       value: {fileID: 21300000, guid: a5c68088e46536e4eb77f16526662150, type: 3}
-    - time: 0.6666667
+    - time: 0.5
       value: {fileID: 21300000, guid: 612490911dc9ffa459e4b71221679544, type: 3}
-    - time: 0.75
+    - time: 0.5833333
       value: {fileID: 0}
     attribute: m_Sprite
     path: 
@@ -60,9 +56,7 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 21300000, guid: 38f904b22809ffc46a8deec37b4ce4e9, type: 3}
     - {fileID: 21300000, guid: d59ff873020f9224aa36264451eee999, type: 3}
-    - {fileID: 21300000, guid: 2e6b56faf5ea4c24c841ec2f8d1c75fb, type: 3}
-    - {fileID: 21300000, guid: ee4b90537ec0b2d41985f56925f440ee, type: 3}
-    - {fileID: 21300000, guid: 2a39d7271f29c4b4a90b3099859afda2, type: 3}
+    - {fileID: 21300000, guid: 736a44c73a9d6e64782d3c1805af74da, type: 3}
     - {fileID: 21300000, guid: 225408b40be6d644c824458693a462fd, type: 3}
     - {fileID: 21300000, guid: 736a44c73a9d6e64782d3c1805af74da, type: 3}
     - {fileID: 21300000, guid: a5c68088e46536e4eb77f16526662150, type: 3}
@@ -73,7 +67,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.8333333
+    m_StopTime: 0.6666666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -92,4 +86,19 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: DestroyOther
+    data: 
+    objectReferenceParameter: {fileID: 5856265888044356164, guid: fa9438510e60ed54a879543fae7957d6,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5833333
+    functionName: DestroyItself
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
