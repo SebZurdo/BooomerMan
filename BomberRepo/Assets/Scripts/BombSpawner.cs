@@ -12,6 +12,7 @@ public class BombSpawner : MonoBehaviour
     public GameObject Player1;
     public GameObject Player2;
     public GameObject bombP;
+    public GameObject bomb_2;
 
     // Update is called once per frame
     void Update()
@@ -43,7 +44,7 @@ public class BombSpawner : MonoBehaviour
                 Vector3Int CellPos = new Vector3Int(PosX, PosY, 0);
                 Vector3 CenterPos = tilemap.GetCellCenterWorld(CellPos);
                 Debug.Log(CellPos);
-                Instantiate(bombP, CenterPos, Quaternion.identity);
+                Instantiate(bomb_2, CenterPos, Quaternion.identity);
             } 
         }
         
