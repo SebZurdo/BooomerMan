@@ -126,7 +126,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1741248223}
     m_Modifications:
     - target: {fileID: 6003088331853384554, guid: 5b2468e8da9afc34e9c8a1db2c2c3909,
         type: 3}
@@ -157,17 +157,17 @@ PrefabInstance:
     - target: {fileID: 6003088331853384557, guid: 5b2468e8da9afc34e9c8a1db2c2c3909,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6003088331853384557, guid: 5b2468e8da9afc34e9c8a1db2c2c3909,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6003088331853384557, guid: 5b2468e8da9afc34e9c8a1db2c2c3909,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6003088331853384557, guid: 5b2468e8da9afc34e9c8a1db2c2c3909,
         type: 3}
@@ -274,7 +274,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 1
-  m_AllowMSAA: 0
+  m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 0
@@ -297,6 +297,12 @@ Transform:
 --- !u!1 &527365639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6003088331853384559, guid: 5b2468e8da9afc34e9c8a1db2c2c3909,
+    type: 3}
+  m_PrefabInstance: {fileID: 392689397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &527365645 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6003088331853384557, guid: 5b2468e8da9afc34e9c8a1db2c2c3909,
     type: 3}
   m_PrefabInstance: {fileID: 392689397}
   m_PrefabAsset: {fileID: 0}
@@ -342,11 +348,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651915524}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.6725233, y: -2.384023, z: -6.3999295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1741248223}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &928968324
@@ -11388,6 +11394,8 @@ Transform:
   m_Children:
   - {fileID: 928968325}
   - {fileID: 1128148055}
+  - {fileID: 527365645}
+  - {fileID: 651915526}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
